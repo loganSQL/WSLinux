@@ -8,38 +8,38 @@ Advantage: cross-platform tools natively on Linux, and Powershell natively on Wi
 
 ## Commands
 Get started 
-```
+`
 wsl
-```
+`
 Linux Distro
-```
+`
 lsb_release -a 
-```
+`
 Shell Profile
-```
+`
 ls -latr
 cat .bashrc
 cat .profile
-```
+`
 
 ## File Systems
-File Systems /mnt/<drive letter>/
-```
+File Systems /mnt/drive_letter/
+`
 ll
-ll /mnt/c
-```
+ll /mnt/c/
+`
 One of the main limitations of using WSL is that changing Linux files with a Windows app or tool is not allowed.
 However changing Windows files with a Linux app or tools is allowed.
 One way to use a Windows file with a Linux app is to use an absolute path, e.g. 
-```
+`
 /mnt/c/Users/<Windows User>/Documents/Projects/<filename>
-```
+`
 However not all Linux apps or tools can access a file using /mnt. A solution is to create a symbolic link.
 Windows directory: C:\Users\<Windows User>\Documents\Projects Note: This directory exist.
 Linux directory: /home/<Linux User>/Projects Note: This directory does not exist.
-```
+`
 ln -s "/mnt/c/Users/<Windows User>/Documents/Projects" /home/<Linux User>/Projects
-```
+`
 
 Now in WSL you can access the Windows directory as /home/<Linux User>/Projects or a specific file as /home/<Linux User>/Projects/<filename>, and if in WSL the current directory is ~ then Projects/<filename>
 
