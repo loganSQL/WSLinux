@@ -45,17 +45,16 @@ Now in WSL you can access the Windows directory as /home/<Linux User>/Projects o
 
 ### Linux Drive vs Windows Drive
 Files under the Linux root (i.e. /) are controlled by the subsystem. This allows for Linux specific behavior including but is not limited to:
-```
-Files which contain invalid Windows filename characters
-Symlinks created for non-admin users
-Changing file attributes through chmod and chown
-Support case sensitivity
-```
+* Files which contain invalid Windows filename characters
+* Symlinks created for non-admin users
+* Changing file attributes through chmod and chown
+* Support case sensitivity
+
 Files in mounted drives are controlled by Windows and have the following behaviors:
-```
-Support case sensitivity
-All permissions are set to best reflect the Windows permissions
-```
+
+* Support case sensitivity
+* All permissions are set to best reflect the Windows permissions
+
 
 ## Links
 
